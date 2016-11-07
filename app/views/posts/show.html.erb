@@ -1,3 +1,5 @@
+<%-# section for individual post -%>
+
 <div id="post_content">
 	<h1 class="title">
 		<%= @post.title %>
@@ -16,3 +18,13 @@
 		<%= @post.body %>
 	</p>
 </div>
+
+<%-# section for comments -%>
+
+<div class="post_wrapper">
+	<%= render "comments/comment" %>
+</div>
+
+<%-# section for comment form -%>
+<%= render "comments/form" %>
+  
